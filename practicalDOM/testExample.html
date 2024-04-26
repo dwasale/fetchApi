@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <button id="genericButton">Click This</button>
+        <script>
+            // retrieving the button element 
+            let button = document.querySelector("#genericButton");
+            // passing event object "e" as argument to event handler function
+            button.addEventListener("click", function(e){
+                /* Check weather the shift key was pressed or not
+                shiftkey property would be true if it was*/
+                if (e.shiftKey){
+                    console.log("The shift key was pressed!");
+                } else {
+                    console.log("The shift key was not pressed!");
+                }
+            });
+        </script>
+    </body>
+</html>
